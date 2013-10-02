@@ -1,5 +1,5 @@
 Name:		kigo
-Version:	4.11.1
+Version:	4.11.2
 Release:	1
 Epoch:		1
 Summary:	Go board game for KDE
@@ -43,6 +43,9 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 %makeinstall_std -C build
 
 %changelog
+* Wed Oct 02 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.2-1
+- New version 4.11.2
+
 * Tue Sep 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.1-1
 - New version 4.11.1
 
