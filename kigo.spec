@@ -8,7 +8,7 @@ License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kigo/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5KDEGames)
-BuildRequires:	kdelibs-devel
+BuildRequires:	cmake(ECM)
 Requires:	gnugo
 
 %description
@@ -35,10 +35,10 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 
 %prep
 %setup -q
+%cmake_kde5
 
 %build
-%cmake_kde4
-%make
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
