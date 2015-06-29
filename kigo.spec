@@ -9,6 +9,7 @@ Url:		http://www.kde.org/applications/games/kigo/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(ECM)
+BuildRequires:	kdelibs-devel
 Requires:	gnugo
 
 %description
