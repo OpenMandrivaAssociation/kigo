@@ -10,6 +10,7 @@ Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{ve
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(ECM)
 BuildRequires:	kdelibs-devel
+BuildRequires:	libkdegames-devel
 Requires:	gnugo
 
 %description
