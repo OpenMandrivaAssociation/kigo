@@ -11,6 +11,7 @@ BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(ECM)
 BuildRequires:	kdelibs-devel
 BuildRequires:	libkdegames-devel
+BuildRequires:	libkdegames4-devel
 Requires:	gnugo
 
 %description
