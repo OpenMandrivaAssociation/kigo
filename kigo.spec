@@ -1,6 +1,6 @@
 Name:		kigo
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 Epoch:		1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
@@ -38,10 +38,10 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 
 %prep
 %setup -q
-%cmake_kde5
+%cmake_kde4
 
 %build
-%ninja -C build
+%make -C build
 
 %install
-%ninja_install -C build
+%makeinstall_std -C build
