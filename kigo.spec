@@ -1,5 +1,5 @@
 Name:		kigo
-Version:	15.08.0
+Version:	15.08.1
 Release:	2
 Epoch:		1
 Summary:	Go board game for KDE
@@ -7,11 +7,10 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kigo/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(KDEGames)
 BuildRequires:	cmake(ECM)
 BuildRequires:	kdelibs-devel
 BuildRequires:	libkdegames-devel
-BuildRequires:	libkdegames4-devel
 Requires:	gnugo
 
 %description
@@ -38,7 +37,7 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 
 %prep
 %setup -q
-%cmake_kde4
+%cmake_kde4 -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6
 
 %build
 %make -C build

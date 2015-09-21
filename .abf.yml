@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kigo-15.08.0.tar.xz: cbc726b8e3de399e0985a27a09baabb0f0a279a5
+sources:
+  kigo-15.08.1.tar.xz: 66493e5c60b7d0ccc3236f7f1d92d226bcaedac3
