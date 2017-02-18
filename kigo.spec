@@ -1,5 +1,5 @@
 Name:		kigo
-Version:	16.08.3
+Version:	16.12.2
 Release:	1
 Epoch:		1
 Summary:	Go board game for KDE
