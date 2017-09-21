@@ -11,7 +11,7 @@ Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons)
-BuildRequires:	cmake(KF5I18n) cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5I18n) cmake(KF5KDEGames) cmake(KF5DocTools)
 BuildRequires:	cmake(KF5KIO) cmake(KF5NewStuff) cmake(KF5TextWidgets)
 BuildRequires:	cmake(KF5WidgetsAddons) cmake(Qt5Core) cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Svg) cmake(Qt5Widgets)
