@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kigo-17.12.1.tar.xz: 0ffe9fe33bb8416b9521db90a2eee59d81b94011
+sources:
+  kigo-17.12.2.tar.xz: 67eea61d0e0654b1e788b9fcf17dae30f6ce406f
