@@ -1,0 +1,12 @@
+diff -up kigo-19.08.2/src/gui/graphicsview/gameview.cpp.omv~ kigo-19.08.2/src/gui/graphicsview/gameview.cpp
+--- kigo-19.08.2/src/gui/graphicsview/gameview.cpp.omv~	2019-10-15 02:26:19.393717034 +0200
++++ kigo-19.08.2/src/gui/graphicsview/gameview.cpp	2019-10-15 02:26:25.173747178 +0200
+@@ -33,7 +33,7 @@ GameView::GameView(GameScene *scene, QWi
+     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+     setFrameStyle(QFrame::NoFrame);
+-    setOptimizationFlags(QGraphicsView::DontClipPainter |
++    setOptimizationFlags(//QGraphicsView::DontClipPainter |
+                          QGraphicsView::DontSavePainterState |
+                          QGraphicsView::DontAdjustForAntialiasing);
+ 

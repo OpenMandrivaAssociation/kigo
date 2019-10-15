@@ -8,6 +8,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kigo/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kigo-19.08.2-qt-5.14.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons)
@@ -41,7 +42,7 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 #------------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
