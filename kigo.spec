@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kigo
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 Epoch:		1
 Summary:	Go board game for KDE
@@ -30,8 +30,8 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 %files -f %{name}.lang
 %{_bindir}/kigo
 %{_datadir}/kigo
-%{_sysconfdir}/xdg/kigo-games.knsrc
-%{_sysconfdir}/xdg/kigo.knsrc
+%{_datadir}/knsrcfiles/kigo-games.knsrc
+%{_datadir}/knsrcfiles/kigo.knsrc
 %{_datadir}/applications/org.kde.kigo.desktop
 %{_datadir}/kxmlgui5/kigo
 %{_datadir}/metainfo/org.kde.kigo.appdata.xml
