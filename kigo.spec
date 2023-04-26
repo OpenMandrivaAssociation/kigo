@@ -1,7 +1,8 @@
-%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
+%define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
+
 Name:		kigo
 Version:	23.04.0
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
@@ -9,12 +10,23 @@ License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kigo/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets)
-BuildRequires:	cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons)
-BuildRequires:	cmake(KF5I18n) cmake(KF5KDEGames) cmake(KF5DocTools)
-BuildRequires:	cmake(KF5KIO) cmake(KF5NewStuff) cmake(KF5TextWidgets)
-BuildRequires:	cmake(KF5WidgetsAddons) cmake(Qt5Core) cmake(Qt5Gui)
-BuildRequires:	cmake(Qt5Svg) cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5NewStuff)
+BuildRequires:	cmake(KF5TextWidgets)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5Svg)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	gnugo
 Requires:	gnugo
 
 %description
