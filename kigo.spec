@@ -1,8 +1,8 @@
 %define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kigo
-Version:	23.04.0
-Release:	2
+Version:	23.04.1
+Release:	1
 Epoch:		1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
