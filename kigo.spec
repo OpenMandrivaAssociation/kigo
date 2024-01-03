@@ -2,7 +2,7 @@
 
 Name:		kigo
 Version:	23.08.4
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
