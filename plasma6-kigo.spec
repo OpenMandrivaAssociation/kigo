@@ -2,12 +2,12 @@
 
 Name:		plasma6-kigo
 Version:	24.01.90
-Release:	2
+Release:	1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-Url:		http://www.kde.org/applications/games/kigo/
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kigo-%{version}.tar.xz
+Url:		https://www.kde.org/applications/games/kigo/
+Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/kigo-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(KF6ConfigWidgets)
@@ -21,9 +21,14 @@ BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6NewStuff)
 BuildRequires:	cmake(KF6TextWidgets)
 BuildRequires:	cmake(KF6WidgetsAddons)
+BuildRequires:  cmake(KF6XmlGui)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
+BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	gnugo
 Requires:	gnugo
