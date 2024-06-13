@@ -4,7 +4,7 @@
 %define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		plasma6-kigo
-Version:	24.05.0
+Version:	24.05.1
 Release:	%{?git:0.%{git}.}1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
