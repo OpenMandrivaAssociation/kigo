@@ -4,7 +4,7 @@
 %define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		plasma6-kigo
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
@@ -61,6 +61,7 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 %{_datadir}/icons/*/*/*/*
 %{_datadir}/config.kcfg/kigo.kcfg
 %{_datadir}/qlogging-categories6/kigo.categories
+%{_datadir}/qlogging-categories6/kigo.renamecategories
 
 #------------------------------------------------------------------------------
 
