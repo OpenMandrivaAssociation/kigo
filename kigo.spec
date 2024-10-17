@@ -7,7 +7,7 @@ Epoch:		1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-Url:		http://www.kde.org/applications/games/kigo/
+Url:		https://www.kde.org/applications/games/kigo/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Config)
