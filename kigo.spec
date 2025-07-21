@@ -4,7 +4,7 @@
 %define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kigo
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Go board game for KDE
 Group:		Graphical desktop/KDE
@@ -41,6 +41,11 @@ BuildRequires:  7zip
 BuildRequires:	gnugo
 Requires:	gnugo
 
+%rename plasma6-kigo
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Kigo is an open-source implementation of the popular Go game.
 
@@ -62,18 +67,3 @@ intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
 %{_datadir}/config.kcfg/kigo.kcfg
 %{_datadir}/qlogging-categories6/kigo.categories
 %{_datadir}/qlogging-categories6/kigo.renamecategories
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kigo-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html
